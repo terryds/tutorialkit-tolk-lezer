@@ -1,0 +1,18 @@
+{
+  "name": "temporary-tolk-pkg",
+  "version": "1.0.0",
+  "main": "lang-tolk.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@lezer/highlight": "^1.2.1",
+    "@lezer/lr": "^1.4.2"
+  },
+  "dependencies": {
+    "@codemirror/language": "^6.10.8"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
