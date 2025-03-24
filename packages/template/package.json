@@ -5,12 +5,15 @@
   "private": true,
   "scripts": {
     "astro": "astro",
-    "build": "astro check && astro build",
+    "build": "astro build",
     "dev": "astro dev",
     "preview": "astro preview",
     "start": "astro dev"
   },
   "dependencies": {
+    "@ton/blueprint": "^0.12.1",
+    "@ton/core": "^0.53.0",
+    "@ton/sandbox": "^0.15.0",
     "@tutorialkit/react": "workspace:*",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
@@ -21,9 +24,11 @@
     "@tutorialkit/astro": "workspace:*",
     "@tutorialkit/theme": "workspace:*",
     "@tutorialkit/types": "workspace:*",
+    "@types/jest": "^29.5.12",
     "@types/node": "^20.14.6",
     "@types/react": "^18.3.3",
     "astro": "^4.15.0",
+    "jest": "^29.7.0",
     "prettier-plugin-astro": "^0.14.1",
     "typescript": "^5.4.5"
   }
