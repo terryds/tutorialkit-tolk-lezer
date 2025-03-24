@@ -2,6 +2,7 @@
   "private": true,
   "scripts": {
     "build": "pnpm run --stream --filter='@tutorialkit/*' --filter=create-tutorial build",
+    "start": "cd packages/template && pnpm run start",
     "dev": "TUTORIALKIT_DEV=true pnpm -r --parallel --stream --filter='./packages/**' run dev",
     "changelog": "./scripts/changelog.mjs",
     "clean": "./scripts/clean.sh",
@@ -18,6 +19,9 @@
     "lint": "eslint \"{packages,docs,extensions,integration}/**/*\"",
     "test": "pnpm run --stream --filter='@tutorialkit/*' test --run",
     "test:e2e": "pnpm run --filter='./e2e' test"
+  },
+  "dependencies": {
+    "temporary-tolk-pkg": "file:./temporary-tolk-pkg"
   },
   "license": "MIT",
   "packageManager": "pnpm@8.15.6",
